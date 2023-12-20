@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/sair"
+        android:icon="@drawable/ic_sair"
+        android:title="Sair" />
+    <item
+        android:id="@+id/config"
+        android:icon="@drawable/ic_config"
+        android:title="Config" />
+    <item
+        android:id="@+id/deputados"
+        android:icon="@drawable/ic_deputados"
+        android:title="Deputados" />
+    <item
+        android:id="@+id/partidos"
+        android:icon="@drawable/ic_partidos"
+        android:title="Partidos" />
+
+</menu>

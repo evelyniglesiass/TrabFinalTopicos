@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#651111"
+    tools:context=".Deputado">
+
+    <ImageView
+        android:id="@+id/idFotoDeputado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.087"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/menu"></com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <TextView
+        android:id="@+id/idNomeDeputado"
+        android:layout_width="127dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="232dp"
+        android:gravity="center"
+        android:text="Nome"
+        android:textColor="#070707"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/idSiglaDeputado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/idSiglaDeputado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="324dp"
+        android:foregroundTint="#651111"
+        android:textStyle="bold"
+        android:text="Sigla"
+        android:textColor="#651111"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idNomeDeputado" />
+
+    <TextView
+        android:id="@+id/idUfPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="368dp"
+        android:layout_marginEnd="318dp"
+        android:layout_marginBottom="1dp"
+        android:text="Sigla UF"
+        android:textStyle="bold"
+        android:textColor="#FF070707"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/idEscolaridadeDeputado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/idEscolaridadeDeputado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="276dp"
+        android:layout_marginBottom="5dp"
+        android:text="escolaridade"
+        android:textStyle="bold"
+        android:textColor="#FF070707"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/idCpfDeputado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idUfPerfil" />
+
+    <TextView
+        android:id="@+id/idCpfDeputado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="362dp"
+        android:layout_marginBottom="5dp"
+        android:text="cpf"
+        android:textStyle="bold"
+        android:textColor="#FF070707"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/idEmailDeputadoPerfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idEscolaridadeDeputado" />
+
+    <TextView
+        android:id="@+id/idEmailDeputadoPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="351dp"
+        android:layout_marginBottom="161dp"
+        android:text="Email"
+        android:textStyle="bold"
+        android:textColor="#651111"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idCpfDeputado" />
+</androidx.constraintlayout.widget.ConstraintLayout>
