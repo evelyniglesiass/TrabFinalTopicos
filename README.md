@@ -6,6 +6,7 @@ Aplicação Mobile (Android) que utiliza a [API da Câmara de Deputados](https:/
 
 - Cadastrar um usuário no Sistema (email e senha)
 - Realizar Login
+- Realizar Logout
 - Navegar entre páginas através de um Menu
 - Visualizar lista de Partidos
 - Visualizar lista de Deputados
